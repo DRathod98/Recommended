@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:background="@color/colorBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="256dp"
+        android:layout_height="137dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/whitelogo" />
+
+    <TextView
+        android:id="@+id/WelcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:text="@string/register_here"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/findItTogetherTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/WelcomeTextView"
+        android:layout_marginTop="10dp"
+        android:text="@string/Find_it_together"
+        android:textColor="#fff"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="245dp"
+        android:layout_below="@+id/findItTogetherTextView"
+        android:layout_marginTop="43dp"
+        android:layout_marginBottom="50dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/email"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:textColor="@color/colorTextView"
+            android:textColorHint="#fff"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:textColor="@color/colorTextView"
+            android:textColorHint="#fff"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/confirmPasswordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:textColor="@color/colorTextView"
+            android:textColorHint="#fff"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="255dp"
+        android:layout_height="55dp"
+        android:layout_below="@id/linear_layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button_drawable"
+        android:bottomLeftRadius="50dp"
+        android:bottomRightRadius="50dp"
+        android:text="@string/register"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="16sp"
+        />
+
+
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Recommended</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="Find_it_together">Find it together</string>
+    <string name="skip">Skip</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="forget_password">Forget Password.?</string>
+    <string name="firstName">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="street_address">Street Address</string>
+    <string name="city">City</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register_here">Register Here</string>
+    <string name="title_activity_home_page">HomePage</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="ForgotText">Enter your email here to get a link for changing the password:</string>
+    <string name="click_to_send_email">Click to send email</string>
+    <string name="advertisement_details">Advertisement Details</string>
+    <string name="advertisement_title">Advertisement Title</string>
+    <string name="advertisement_category">Advertisement Category</string>
+    <string name="advertisement_type">Advertisement Type</string>
+    <string name="advertisement_description">Advertisement Description</string>
+    <string name="cost">Cost</string>
+    <string name="date">Date</string>
+    <string name="search">Search</string>
+    <string name="register">Register</string>
+    <string name="post">Post</string>
+    <string name="addational_details">Addational Details</string>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootView"
+    android:background="@color/colorBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="256dp"
+        android:layout_height="137dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/whitelogo" />
+
+    <TextView
+        android:id="@+id/advertisementDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:text="@string/advertisement_details"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="5dp"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/Layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/advertisementDetailsTextView"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="-5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/advertisementTitleEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10sp"
+            android:paddingLeft="10sp"
+            android:hint="@string/advertisement_title"
+            android:textColor="@color/colorTextView"
+        android:textColorHint="#fff"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/advertisementCategoryEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10sp"
+            android:paddingLeft="10sp"
+            android:hint="@string/advertisement_category"
+            android:textColor="@color/colorTextView"
+            android:textColorHint="#fff"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/typeAdvertisementEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10sp"
+            android:paddingLeft="10sp"
+            android:hint="@string/advertisement_type"
+            android:textColor="@color/colorTextView"
+            android:textColorHint="#fff"
+            android:textSize="15sp"
+            tools:ignore="PrivateResource" />
+
+        <EditText
+            android:id="@+id/advertisementDescriptionEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10sp"
+            android:scrollbars="horizontal"
+            android:scrollbarSize="@dimen/cardview_compat_inset_shadow"
+            android:scrollbarFadeDuration="@android:integer/config_mediumAnimTime"
+            android:hint="@string/advertisement_description"
+            android:textColor="@color/colorTextView"
+            android:textColorHint="#fff"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/costEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="10sp"
+            android:paddingLeft="10sp"
+            android:hint="@string/cost"
+            android:textColor="@color/colorTextView"
+            android:textColorHint="#fff"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/datePostedEditText"
+            android:clickable="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:editable="false"
+            android:hint="@string/date"
+            android:textColorHint="#fff"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp"
+            android:focusable="false"
+            android:textColor="#fff"/>
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/postButton"
+        android:layout_width="255dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/Layout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/button_drawable"
+        android:bottomLeftRadius="50dp"
+        android:bottomRightRadius="50dp"
+        android:text="@string/post"
+        android:textAllCaps="false"
+        android:textColor="#000"
+        android:textSize="16sp"
+        />
+
+
+</RelativeLayout>
